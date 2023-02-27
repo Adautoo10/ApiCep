@@ -2,18 +2,38 @@
 
 namespace App\Controller;
 
-include 'Controller.php';
+use App\Model\{EnderecoModel, CidadeModel};
+use Exception;
+
 
 class EnderecoController extends Controller
 {
-    public static function teste()
+    public static function getCepByLogradouro () : void
     {
-        //var_dump("Querid@s Alun@s");
-        //parent::getResponseAsJSON("Querid@s Alun@s");
-
-        $cidades = ['Jau', 'Bariri', 'Itapui', "DC"];
-        parent::getResponseAsJSON($cidades);
 
     }
 
+    public static function getLogradouroByBairroAndCidade ()  : void
+    {
+
+    }
+
+    public static function getLogradouroByCep () : void
+    {
+
+    }
+
+     public static function getBairrosByIdCidade () : void
+     {
+
+     }
+
+     public static function getCidadesByUf () : void
+     {
+        
+     }
+
 }
+
+
+
