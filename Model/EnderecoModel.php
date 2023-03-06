@@ -42,8 +42,8 @@ class EnderecoModel extends Model
 
         echo $e->getMessage();
 
+        }
     }
-}
 
     public function getBairrosByIdCidade(int $id_cidade)
     {
