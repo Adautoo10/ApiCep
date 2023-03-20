@@ -30,6 +30,22 @@ class EnderecoModel extends Model
     }
 }
 
+    public function getLogradouroByBairroAndCidade(string $bairro,
+    int $id_cidade)
+{
+    try 
+    {
+        $dao = new EnderecoDAO();
+
+        $this->rows = $dao->selectLogradouroByBairroAndCidade($bairro, $id_cidade);
+
+    } catch(Exception $e) {
+        throw $e;
+    }
+}
+    
+
+
     public function getCepByLogradouro($logradouro)
     {
         try 

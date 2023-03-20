@@ -2,9 +2,9 @@
 
 use App\Controller\EnderecoController;
 
-$url = parse_url($_SERVER['REQUEST_URl'], PHP_URL_PATH);
+$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-switch ($url)
+switch($url)
 {
 //Exemplo de acesso
 
@@ -14,6 +14,10 @@ switch ($url)
 
     case '/logradouro/by-bairro':
     EnderecoController::getLogradouroByBairroAndCidade();
+    break;
+
+    case '/cep/by-logradouro':
+        EnderecoController::getCepByLogradouro();
     break;
 
     case '/cidade/by-uf':

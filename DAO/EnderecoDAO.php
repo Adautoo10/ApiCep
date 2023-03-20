@@ -18,7 +18,7 @@ class EnderecoDAO extends DAO
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $cep);
-        $stmt->execute();
+        $stmt->execute();   
 
         $endereco_obj = $stmt->fetchObject("App\Model\EnderecoModel");
 
