@@ -5,12 +5,12 @@ use App\Controller\EnderecoController;
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($url)
-{
+    {
 //Exemplo de acesso
 
 
-    //http://localhost:8000/endereco/by-cep?cep=17210580
-    case '/endereco/by-cep':
+        //http://localhost:8000/endereco/by-cep?cep=17210580
+        case '/endereco/by-cep':
         EnderecoController::getLogradouroByCep();
         break;
     
