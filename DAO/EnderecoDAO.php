@@ -20,7 +20,7 @@ class EnderecoDAO extends DAO
         $stmt->bindValue(1, $cep);
         $stmt->execute();   
 
-        $endereco_obj = $stmt->fetchObject("App\Model\EnderecoModel");
+        $endereco_obj = $stmt->fetchObject("ApiCep\Model\EnderecoModel");
 
         $endereco_obj->arr_cidades =  $this->selectCidadesByUf($endereco_obj->UF);
 
