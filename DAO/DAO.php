@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DAO;
+namespace ApiCep\DAO;
 
 use Exception;
 use \PDO;

@@ -1,8 +1,8 @@
 <?php 
 
-namespace App\Model;
+namespace ApiCep\Model;
 
-use App\DAO\EnderecoDAO;
+use ApiCep\DAO\EnderecoDAO;
 
 class CidadeModel extends Model 
 {

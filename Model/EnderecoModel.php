@@ -1,8 +1,9 @@
 <?php 
 
-namespace App\Model;
+namespace ApiCep\Model;
 
-use App\DAO\EnderecoDAO;
+use ApiCep\DAO\EnderecoDAO;
+
 use Exception;
 
 

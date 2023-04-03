@@ -1,6 +1,6 @@
 <?php
 
-use App\Controller\EnderecoController;
+use ApiCep\Controller\EnderecoController;
 
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -37,6 +37,8 @@ switch($url)
         default:
             http_response_code(403);
         break;
+
+        
     
     }
     

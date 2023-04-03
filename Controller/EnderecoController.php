@@ -1,8 +1,9 @@
 <?php 
 
-namespace App\Controller;
+namespace ApiCep\Controller;
 
-use App\Model\{EnderecoModel, CidadeModel};
+use ApiCep\Model\{EnderecoModel, CidadeModel};
+
 use Exception;
 
 
