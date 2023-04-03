@@ -3,7 +3,7 @@
 namespace App\DAO;
 
 use Exception;
-use PDO;
+use \PDO;
 use PDOException;
 
 abstract class DAO extends PDO
